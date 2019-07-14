@@ -1,0 +1,84 @@
+    module ram_2_16(
+        //input:
+        clk,
+        wren,
+        din,
+        waddr,
+        raddr,
+        //output:
+        dout1,
+		  dout2,
+		  dout3,
+		  dout4,
+		  dout5,
+		  dout6,
+		  dout7,
+		  dout8,
+		  dout9,
+		  dout10,
+		  dout11,
+		  dout12,
+		  dout13,
+		  dout14,
+		  dout15,
+		  dout16
+        );
+ 
+        parameter   DWIDTH = 16; //数据宽度，请根据实际情况修改
+        parameter   AWIDTH = 8; //地址宽度，请根据实际情况修改
+ 
+        input clk;
+        input wren;
+        input [DWIDTH-1:0] din;
+        input [AWIDTH-1:0] waddr;
+        input   [AWIDTH-1:0] raddr;
+        output [DWIDTH-1:0] dout1; 
+        output [DWIDTH-1:0] dout2; 
+        output [DWIDTH-1:0] dout3; 
+        output [DWIDTH-1:0] dout4; 
+        output [DWIDTH-1:0] dout5; 
+        output [DWIDTH-1:0] dout6; 
+        output [DWIDTH-1:0] dout7; 
+        output [DWIDTH-1:0] dout8; 
+        output [DWIDTH-1:0] dout9; 
+        output [DWIDTH-1:0] dout10; 
+        output [DWIDTH-1:0] dout11; 
+        output [DWIDTH-1:0] dout12; 
+        output [DWIDTH-1:0] dout13; 
+        output [DWIDTH-1:0] dout14; 
+        output [DWIDTH-1:0] dout15; 
+        output [DWIDTH-1:0] dout16; 
+ 
+        reg [DWIDTH-1:0] RAM [2**AWIDTH-1:0];
+        reg [AWIDTH-1:0] raddr_reg;
+ 
+        always @ (posedge clk)
+        begin
+            if(wren) 
+                begin
+                RAM[waddr] <= din;
+                end
+				else
+				    begin
+					 raddr_reg <= raddr;
+					 end
+			
+        end
+ 
+        assign dout1 = RAM[raddr_reg];
+		  assign dout2 = RAM[raddr_reg+16'd1];
+		  assign dout3 = RAM[raddr_reg+16'd2];
+		  assign dout4 = RAM[raddr_reg+16'd3];
+		  assign dout5 = RAM[raddr_reg+16'd4];
+		  assign dout6 = RAM[raddr_reg+16'd5];
+		  assign dout7 = RAM[raddr_reg+16'd6];
+		  assign dout8 = RAM[raddr_reg+16'd7];
+		  assign dout9 = RAM[raddr_reg+16'd8];
+		  assign dout10 = RAM[raddr_reg+16'd9];
+		  assign dout11 = RAM[raddr_reg+16'd10];
+		  assign dout12 = RAM[raddr_reg+16'd11];
+		  assign dout13 = RAM[raddr_reg+16'd12];
+		  assign dout14 = RAM[raddr_reg+16'd13];
+		  assign dout15 = RAM[raddr_reg+16'd14];
+		  assign dout16 = RAM[raddr_reg+16'd15];
+    endmodule

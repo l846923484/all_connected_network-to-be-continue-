@@ -1,0 +1,5 @@
+module original2complement(original_data, complement_data);
+input signed[31:0] original_data;
+output signed[31:0] complement_data;
+assign complement_data=(original_data[31]==1)?(~{1'b0,original_data[30:0]}+32'b1):original_data;
+endmodule

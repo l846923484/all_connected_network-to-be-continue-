@@ -1,0 +1,16 @@
+Fitter Status : Failed - Wed Jul 10 15:15:10 2019
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : ACN
+Top-level Entity Name : rom_weight2
+Family : Cyclone II
+Device : EP2C15AF256A7
+Timing Models : Final
+Total logic elements : 407 / 14,448 ( 3 % )
+    Total combinational functions : 397 / 14,448 ( 3 % )
+    Dedicated logic registers : 10 / 14,448 ( < 1 % )
+Total registers : 10
+Total pins : 18 / 152 ( 12 % )
+Total virtual pins : 16
+Total memory bits : 2,097,152 / 239,616 ( 875 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

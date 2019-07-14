@@ -1,0 +1,13 @@
+
+
+D:/altera/13.0/verilog/all_connected_network/rom_2.v
+
+Jun 20 11AM:04:27>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+rom_2.vhd
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?

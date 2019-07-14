@@ -1,0 +1,20 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x15987926: saui_ase + 0x57926 (saui_ase_dll_get_template_classes + 0x4ac36)
+	0x77c24953: ntdll + 0x24953 (RtlDeactivateActivationContext + 0x193)
+	0x0289beb2: mfc90 + 0x5beb2
+	0x77c24892: ntdll + 0x24892 (RtlDeactivateActivationContext + 0xd2)
+	0x02899165: mfc90 + 0x59165
+	</callstack>
+	<error>Current editor: ASE, RPW, STED, STED</error>
+	<date>Fri Apr 12 11:21:06 2019</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X15987926
+Current editor: ASE, RPW, STED, STED
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
